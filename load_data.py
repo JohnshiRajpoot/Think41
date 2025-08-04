@@ -74,5 +74,9 @@ print(pd.read_sql_query("SELECT COUNT(*) FROM users;", conn))
 print("\nOrders Row Count:")
 print(pd.read_sql_query("SELECT COUNT(*) FROM orders;", conn))
 
+print("Verification")
+print(pd.read_sql_query("PRAGMA table_info(users);", conn))
+
+
 # Done
 conn.close()
